@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+
+@font-face {
+    font-family: 'computer_pixel-7';
+    src: url('../fonts/computer_pixel-7.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;    /* iOS Safari */
+    -webkit-user-select: none;      /* Safari */
+    -khtml-user-select: none;       /* Konqueror HTML */
+    -moz-user-select: none;         /* Firefox */
+    -ms-user-select: none;          /* Internet Explorer/Edge */
+    user-select: none;              /* Non-prefixed version, currently supported by Chrome and Opera */
+    -o-user-select: none;
+    -webkit-user-drag: none;
+}
+
+html {
+    height: 100%;
+}
+
+body { 
+    background-size: cover;
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+[wm-flappy] {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 150px;
+    width: 100px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 50px;
+    z-index: 100;
+}
+
+
+.endgame {
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    display: none;
+    top: 100px;
+    font-family: Arial;
+    font-size: 50px;
+    text-align: center;
+    color: #faf61b;
+    z-index: 2;
+}
+
+.endgame p{
+    font-family: computer_pixel-7;
+    font-size: 75px;
+}
+
+.menugame {
+    position: absolute;
+    display: none;
+    top: 150px;
+    font-family: Arial;
+    font-size: 90px;
+    text-align: center;
+    color: #faf61b;
+    z-index: 2;
+    font-family: computer_pixel-7;
+}
+
+@keyframes menugame {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.menugame {
+  -webkit-animation: menugame .75s linear infinite;
+  -moz-animation: menugame .75s linear infinite;
+  -ms-animation: menugame .75s linear infinite;
+  -o-animation: menugame .75s linear infinite;
+  animation: menugame .75s linear infinite;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #363636;
+}
+
+footer p{
+    margin: 5px;
+    font-size: 17px;
+}
