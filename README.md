@@ -1,6 +1,6 @@
 <h1 align="center">🎮 Flappy Bird </h1>
 
-<h2 align="center"><a href="">🚀 Clique Aqui Para Jogar 🚀</a></h2>
+<h2 align="center"><a href="https://flappybird-game.netlify.app/">🚀 Clique Aqui Para Jogar 🚀</a></h2>
 
 <h2 align="center">👁‍🗨👁‍🗨</h2>
 
